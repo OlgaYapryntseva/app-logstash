@@ -1,6 +1,12 @@
 build:
   docker:
     web: Dockerfile
-    worker: Dockerfile
+
+environments:
+  - name: app-logstash
+    docker:
+      image: docker.elastic.co/logstash/logstash:8.3.3
     config:
       LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+
+
