@@ -1,4 +1,6 @@
 build:
   docker:
     web: Dockerfile
-
+    worker: Dockerfile
+    config:
+      LS_JAVA_OPTS: "-Xmx512m -Xms512m"
