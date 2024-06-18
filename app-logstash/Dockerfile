@@ -2,7 +2,7 @@
 FROM docker.elastic.co/logstash/logstash:8.3.3
 
 # Устанавливаем опции JVM для Logstash
-ENV LS_JAVA_OPTS="-Xmx512m -Xms512m"
+ENV LS_JAVA_OPTS="-Xmx256m -Xms256m"
 
 # Копируем конфигурационные файлы Logstash
 COPY logstash/config/logstash.yml /usr/share/logstash/config/logstash.yml
