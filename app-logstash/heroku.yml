@@ -1,5 +1,4 @@
 build:
   docker:
     web: Dockerfile
-run:
-  web: logstash -f /usr/share/logstash/pipeline/logstash.conf
+
